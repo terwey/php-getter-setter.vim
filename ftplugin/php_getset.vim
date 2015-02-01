@@ -282,7 +282,7 @@ else
   \ "    {\n" .
   \ "        $this->%varname% = $%varname%;\n" .
   \ "\n" .
-  \ "        return $this;" .
+  \ "        return $this;\n" .
   \ "    }"
 endif
 
