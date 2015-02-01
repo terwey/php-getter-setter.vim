@@ -254,7 +254,7 @@ if exists("b:phpgetset_getterTemplate")
   let s:phpgetset_getterTemplate = b:phpgetset_getterTemplate
 else
   let s:phpgetset_getterTemplate =
-    \ "    \n" .
+    \ "\n" .
     \ "    /**\n" .
     \ "     * Get %varname%.\n" .
     \ "     *\n" .
@@ -272,7 +272,7 @@ if exists("b:phpgetset_setterTemplate")
   let s:phpgetset_setterTemplate = b:phpgetset_setterTemplate
 else
   let s:phpgetset_setterTemplate =
-  \ "    \n" .
+  \ "\n" .
   \ "    /**\n" .
   \ "     * Set %varname%.\n" .
   \ "     *\n" .
@@ -281,6 +281,8 @@ else
   \ "    public function %funcname%($%varname%)\n" .
   \ "    {\n" .
   \ "        $this->%varname% = $%varname%;\n" .
+  \ "\n" .
+  \ "        return $this;" .
   \ "    }"
 endif
 
